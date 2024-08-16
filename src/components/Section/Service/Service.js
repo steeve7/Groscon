@@ -1,7 +1,7 @@
 import React from 'react'
-import icon from '../Assets/images/icon.png'
-import icon2 from '../Assets/images/icon (1).png'
-import icon3 from '../Assets/images/icon (2).png'
+import icon from '../Assets/images/Icon.png'
+import icon2 from '../Assets/images/Icon (1).png'
+import icon3 from '../Assets/images/Icon (2).png'
 import Subtitle from '@/components/Reuse/Subtitle';
 import Image from 'next/image';
 
