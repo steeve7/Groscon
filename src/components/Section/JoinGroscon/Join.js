@@ -1,16 +1,14 @@
-"use client";
 import React from "react";
 import Join1 from "../Assets/images/join.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FaApple, FaPlay } from "react-icons/fa";
-import { motion } from "framer-motion";
 import Gross from "../Assets/images/grossy.JPG";
 import Gross1 from "../Assets/images/Grossymobile.JPG";
 
 export default function Join() {
   return (
-    <div className="relative flex flex-col items-center w-full lg:px-10 px-7 mt-10">
+    <div className="relative flex flex-col items-center w-full mt-10">
       {/* Background images */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Large screens */}
@@ -37,14 +35,14 @@ export default function Join() {
 
       {/* Main content container */}
       <div className="relative flex flex-col md:flex-row items-center justify-center pt-10 rounded-lg md:w-3/4 w-full gap-6">
-        <div className="flex-1 md:w-1/2 w-full text-center md:text-left lg:space-y-20">
-          <motion.h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-white lg:-mt-7 py-10">
+        <div className="flex-1 md:w-1/2 w-full text-center md:text-left">
+          <h2 className="font-semibold text-[24px] lg:text-[38px]  text-white lg:-mt-24 py-20">
             Join thousands who simplify their grocery process with us
-          </motion.h2>
-          <motion.div className="flex flex-row gap-4 md:gap-6 justify-center mt-36 lg:mt-0">
+          </h2>
+          <div className="flex flex-row gap-4 md:gap-6 justify-center lg:mt-0 lg:px-0 px-6">
             <Link
               href="./"
-              className="p-4 text-white rounded-lg flex justify-center items-center font-bold text-sm md:text-base lg:text-lg w-full md:w-1/2 lg:w-1/2"
+              className="p-4 text-white rounded-[16px] flex justify-center items-center font-bold text-sm md:text-base lg:text-lg w-full md:w-1/2 lg:w-1/2"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
               <FaApple className="mr-2" />
@@ -52,15 +50,15 @@ export default function Join() {
             </Link>
             <Link
               href="./"
-              className="p-4 text-white rounded-lg flex justify-center items-center font-bold text-sm md:text-base lg:text-lg w-full md:w-1/2 lg:w-1/2"
+              className="p-4 text-white rounded-[16px] flex justify-center items-center font-bold text-sm md:text-base lg:text-lg w-full md:w-1/2 lg:w-1/2"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
               <FaPlay className="mr-2" />
               Get on Android
             </Link>
-          </motion.div>
+          </div>
         </div>
-        <motion.div className="flex-shrink-0">
+        <div className="flex-shrink-0">
           <Image
             src={Join1}
             alt="grocery_image"
@@ -68,7 +66,7 @@ export default function Join() {
             width={400}
             height={300}
           />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

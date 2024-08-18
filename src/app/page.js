@@ -10,7 +10,7 @@ import Service from '@/components/Section/Service/Service';
 export default function Home() {
   return (
     <div>
-    <div className='home'>
+    <div className='w-full'>
       <Header />
       <div>
         <Grocery />
