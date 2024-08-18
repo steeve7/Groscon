@@ -1,4 +1,3 @@
-'use client'
 import Subtitle from "@/components/Reuse/Subtitle";
 import React from "react";
 import Feature from "../Assets/images/Features.png";
@@ -6,7 +5,6 @@ import Feature1 from "../Assets/images/Features2.png";
 import Feature2 from "../Assets/images/Features3.png";
 import Feature3 from "../Assets/images/Features4.png";
 import Image from "next/image";
-import {motion} from 'framer-motion'
 
 export default function Features() {
   return (
@@ -20,194 +18,90 @@ export default function Features() {
       <div className="flex flex-col justify-center w-full mt-10 gap-10">
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full">
-            <motion.h2
-              className="font-semibold md:text-[30px] text-[18px] font-[Euclid Circular A]"
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.2,
-                x: { type: "spring", stiffness: 60 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-              }}
-            >
+            <h2 className="font-semibold md:text-[30px] text-[18px] font-[Euclid Circular A]">
               Grocery Management
-            </motion.h2>
-            <motion.p
+            </h2>
+            <p
               className="lg:w-full md:w-full font-[Euclid Circular A] md:text-[18px] text-[14px]"
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.4,
-                x: { type: "spring", stiffness: 60 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-              }}
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Scan shopping receipts to extract grocery details. Create shopping
               lists for upcoming trips to the grocery store.
-            </motion.p>
+            </p>
           </div>
-          <motion.div
-            className=""
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.6,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-            }}
-          >
+          <div className="">
             <Image
               src={Feature}
               alt="features_image"
               className="md:w-[390px] w-[343px]"
             />
-          </motion.div>
+          </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full md:order-2 order-1">
-            <motion.h2
-              className="font-bold md:text-[30px] text-[18px] font-[Euclid Circular A]"
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.2,
-                x: { type: "spring", stiffness: 60 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-              }}
-            >
+            <h2 className="font-bold md:text-[30px] text-[18px] font-[Euclid Circular A]">
               Inventory Management
-            </motion.h2>
-            <motion.p
+            </h2>
+            <p
               className="w-full font-[Euclid Circular A] md:text-[18px] text-[14px]"
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.4,
-                x: { type: "spring", stiffness: 60 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-              }}
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Create spaces within the app to organise where you store your
               groceries in real life. Get timely reminders when items are
               nearing their expiry date. Receive reminders to update item
               quantities based on usage patterns.
-            </motion.p>
+            </p>
           </div>
-          <motion.div
-            className="md:order-1 order-2"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-            }}
-          >
+          <div className="md:order-1 order-2">
             <Image
               src={Feature3}
               alt="features_image"
               className="md:w-[390px] w-[343px]"
             />
-          </motion.div>
+          </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full">
-            <motion.h2 className="font-bold md:text-[30px] text-[18px] font-[Euclid Circular A]"
-            initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}>
+            <h2 className="font-bold md:text-[30px] text-[18px] font-[Euclid Circular A]">
               Expense Tracking
-            </motion.h2>
-            <motion.p
-            initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.4,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}
+            </h2>
+            <p
               className="w-full font-[Euclid Circular A] md:text-[18px] text-[14px]"
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Monitor your grocery spending with weekly, monthly, and yearly
               reports. Set monthly budgets and track your spending to stay
               within your budget.
-            </motion.p>
+            </p>
           </div>
-          <motion.div className=""
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}>
+          <div className="">
             <Image
               src={Feature2}
               alt="features_image"
               className="md:w-[390px] w-[343px]"
             />
-          </motion.div>
+          </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full md:order-2 order-1">
-            <motion.h2 className="font-bold md:text-[30px] text-[18px] font-[Euclid Circular A]"
-            initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}>
+            <h2 className="font-bold md:text-[30px] text-[18px] font-[Euclid Circular A]">
               Nutritional Information
-            </motion.h2>
-            <motion.p
+            </h2>
+            <p
               className="w-full font-[Euclid Circular A] md:text-[18px] text-[14px]"
-              initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.4,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Scan items to view their nutritional information and suitability
               based on dietary preferences.
-            </motion.p>
+            </p>
           </div>
-          <motion.div className="md:order-1 order-2"
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}>
+          <div className="md:order-1 order-2">
             <Image
               src={Feature3}
               alt="features_image"
               className="md:w-[390px] w-[343px]"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
