@@ -19,7 +19,7 @@ export default function Subtitle({title, desc}) {
         {title}
       </h2>
       <p
-        className="md:text-[18px] text-[9px] font-normal font-[Euclid Circular A] w-full font-circular"
+        className="md:text-[18px] text-[16px] font-normal font-[Euclid Circular A] w-full font-circular"
         style={{ color: "rgba(69, 69, 69, 1)" }}
       >
         {desc}
