@@ -44,12 +44,12 @@ export default function Header() {
       <div className="flex justify-between md:py-7 py-4 md:px-20 px-7">
         <a
           href="./"
-          className="uppercase font-bold md:text-[18px] text-[14px] flex items-center justify-start gap-2 text-black font-[Euclid Circular A]"
+          className="uppercase font-bold md:text-[18px] text-[14px] flex items-center justify-start gap-2 text-black font-circular"
         >
           <Image src={logo} alt="cartImage" />
           groscan
         </a>
-        <ul className="justify-around gap-6 items-center md:flex flex-row hidden text-black font-bold uppercase font-sans">
+        <ul className="justify-around gap-6 items-center md:flex flex-row hidden text-black font-bold uppercase font-circular">
           {menus.map((menu, i) => (
             <li key={i}>
               <a href={menu.id} activeclass="active">
@@ -79,7 +79,7 @@ export default function Header() {
             {menus.map((menu, i) => (
               <li
                 key={i}
-                className="p-4 text-[18px] hover:text-gray-500 border-b-2 py-4"
+                className="p-4 text-[18px] hover:text-gray-500 border-b-2 py-4 font-circular"
               >
                 <a href={menu.id}>{menu.label}</a>
               </li>

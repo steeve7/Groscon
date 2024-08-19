@@ -12,6 +12,9 @@ module.exports = {
         "custom-gray": "rgba(250, 250, 250, 1)",
         "dark-green": "rgba(0, 62, 41, 1)",
       },
+      fontFamily: {
+      "circular": "Euclid Circular A"
+    }
     },
   },
   plugins: [],

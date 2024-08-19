@@ -21,7 +21,7 @@ export default function Grocery() {
             opacity: { duration: 1 },
             ease: "easeIn",
           }}
-          className="font-semibold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-[Euclid Circular A] text-[#161616] lg:gap-10 md:gap-2 lg:mb-10"
+          className="font-semibold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-circular text-[#161616] lg:gap-10 md:gap-2 lg:mb-10"
         >
           Grocery
           <span>Management,</span>
@@ -38,7 +38,7 @@ export default function Grocery() {
             opacity: { duration: 1 },
             ease: "easeIn",
           }}
-          className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-[Euclid Circular A] text-[#454545] font-normal"
+          className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-circular text-[#454545] font-normal"
         >
           Groscan is your personal AI grocery and nutrition assistant that
           simplifies grocery management by allowing you to scan your shopping
@@ -60,14 +60,14 @@ export default function Grocery() {
         >
           <Link
             href="./"
-            className="p-4 text-white bg-[#336548] rounded-[16px] flex justify-center items-center gap-2 font-semibold lg:text-[16px] md:text-sm text-xs"
+            className="font-circular p-4 text-white bg-[#336548] rounded-[16px] flex justify-center items-center gap-2 font-semibold lg:text-[16px] md:text-sm text-xs"
           >
             <FaApple />
             Get on iPhone
           </Link>
           <Link
             href="./"
-            className="p-4 text-white bg-[#336548] rounded-[16px] flex justify-center items-center gap-2 font-semibold lg:text-[16px] md:text-sm text-xs"
+            className="font-circular p-4 text-white bg-[#336548] rounded-[16px] flex justify-center items-center gap-2 font-semibold lg:text-[16px] md:text-sm text-xs"
           >
             <FaPlay />
             Get on Android

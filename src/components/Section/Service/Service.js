@@ -47,7 +47,7 @@ export default function Service() {
         {items.map((item, i) => (
           <div
             key={i}
-            className="flex justify-center text-center items-center flex-col gap-4 md:w-[27%] w-full md:h-[400px] lg:h-[230px] py-10 px-10 mx-2 rounded-lg"
+            className="flex justify-center text-center items-center flex-col gap-4 md:w-[27%] w-full md:h-[400px] lg:h-[270px] py-10 px-10 mx-2 rounded-lg"
             style={{ background: "rgba(230, 247, 230, 1)" }}
           >
             <Image
@@ -55,11 +55,11 @@ export default function Service() {
               alt="icon_image"
               className="lg:w-[20%] md:w-[40%]"
             />
-            <h3 className="font-semibold md:text-[12px] text-[10px] font-[Euclid Circular A]">
+            <h3 className="font-semibold md:text-[24px] text-[18px] font-circular">
               {item.title}
             </h3>
             <p
-              className="md:text-[14px] text-[10px] font-[Euclid Circular A]"
+              className="md:text-[18px] text-[14px] font-circular"
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               {item.desc}

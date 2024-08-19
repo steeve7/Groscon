@@ -45,9 +45,11 @@ export default function Faq() {
             className="flex flex-row gap-3 items-center justify-between border-b-2 py-3"
           >
             <div className="flex flex-col">
-              <h2 className="font-medium text-[18px]">{read.title}</h2>
+              <h2 className="font-medium text-[18px] font-circular">
+                {read.title}
+              </h2>
               <p
-                className=" text-[14px] font-normal font-[Euclid Circular A] md:w-1/2 w-full"
+                className=" text-[14px] font-normal font-circular w-full"
                 style={{ color: "rgba(69, 69, 69, 1)" }}
               >
                 {read.desc}

@@ -15,11 +15,11 @@ export default function Subtitle({title, desc}) {
         ease: "easeIn",
       }}
     >
-      <h2 className="md:text-[36px] text-[18px] font-semibold w-full">
+      <h2 className="md:text-[36px] text-[18px] font-semibold w-full font-circular">
         {title}
       </h2>
       <p
-        className="md:text-[18px] text-[9px] font-normal font-[Euclid Circular A] w-full"
+        className="md:text-[18px] text-[9px] font-normal font-[Euclid Circular A] w-full font-circular"
         style={{ color: "rgba(69, 69, 69, 1)" }}
       >
         {desc}
