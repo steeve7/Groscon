@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="gap-2 flex md:flex-col flex-row w-full">
             <Link
               href="./"
-              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center font-bold sm:text-[15px] text-[12px]"
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center font-bold text-[14px]"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
               <FaApple className="text-white" />

@@ -48,7 +48,7 @@ export default function Grocery() {
 
         {/* Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-2 w-full"
+          className="flex flex-row gap-2 w-full"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
@@ -58,20 +58,22 @@ export default function Grocery() {
             ease: "easeIn",
           }}
         >
-          <Link
-            href="./"
-            className="font-circular p-4 text-white bg-[#336548] rounded-[16px] flex justify-center items-center gap-2 font-semibold lg:text-[16px] md:text-sm text-xs"
-          >
-            <FaApple />
-            Get on iPhone
-          </Link>
-          <Link
-            href="./"
-            className="font-circular p-4 text-white bg-[#336548] rounded-[16px] flex justify-center items-center gap-2 font-semibold lg:text-[16px] md:text-sm text-xs"
-          >
-            <FaPlay />
-            Get on Android
-          </Link>
+            <Link
+              href="./"
+              className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
+              style={{ background: "rgba(51, 101, 84, 1)" }}
+            >
+              <FaApple className="text-white" />
+              Get on iphone
+            </Link>
+            <Link
+              href="./"
+              className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
+              style={{ background: "rgba(51, 101, 84, 1)" }}
+            >
+              <FaPlay className="text-white" />
+              Get on Andriod
+            </Link>
         </motion.div>
       </div>
 
