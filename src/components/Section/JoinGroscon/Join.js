@@ -28,7 +28,7 @@ export default function Join() {
             alt="gross2_image"
             layout="fill"
             objectFit="cover"
-            className="w-full"
+            className="w-full h-full"
           />
         </div>
       </div>

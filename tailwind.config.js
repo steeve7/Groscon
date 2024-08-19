@@ -13,8 +13,8 @@ module.exports = {
         "dark-green": "rgba(0, 62, 41, 1)",
       },
       fontFamily: {
-      "circular": "Euclid Circular A"
-    }
+        euclid: ['"Euclid Circular A"'],
+      },
     },
   },
   plugins: [],

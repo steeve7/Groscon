@@ -21,7 +21,7 @@ export default function Grocery() {
             opacity: { duration: 1 },
             ease: "easeIn",
           }}
-          className="font-semibold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-circular text-[#161616] lg:gap-10 md:gap-2 lg:mb-10"
+          className="font-bold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-euclid text-[#161616] lg:gap-10 md:gap-2 lg:mb-10"
         >
           Grocery
           <span>Management,</span>
@@ -58,22 +58,22 @@ export default function Grocery() {
             ease: "easeIn",
           }}
         >
-            <Link
-              href="./"
-              className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
-              style={{ background: "rgba(51, 101, 84, 1)" }}
-            >
-              <FaApple className="text-white" />
-              Get on iphone
-            </Link>
-            <Link
-              href="./"
-              className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
-              style={{ background: "rgba(51, 101, 84, 1)" }}
-            >
-              <FaPlay className="text-white" />
-              Get on Andriod
-            </Link>
+          <Link
+            href="./"
+            className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
+            style={{ background: "rgba(51, 101, 84, 1)" }}
+          >
+            <FaApple className="text-white" />
+            Get on iphone
+          </Link>
+          <Link
+            href="./"
+            className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
+            style={{ background: "rgba(51, 101, 84, 1)" }}
+          >
+            <FaPlay className="text-white" />
+            Get on Andriod
+          </Link>
         </motion.div>
       </div>
 
