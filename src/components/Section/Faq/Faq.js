@@ -38,7 +38,7 @@ export default function Faq() {
           desc="Everything you need to know about Groscan"
         />
       </div>
-      <div className="flex flex-col justify-center gap-8 w-full md:px-0 px-7">
+      <div className="flex flex-col justify-center gap-8 w-full md:px-0 px-7 mt-10">
         {reads.map((read, i) => (
           <div
             key={i}

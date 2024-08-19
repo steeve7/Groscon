@@ -21,7 +21,7 @@ export default function Footer() {
             Your Ai Assistant for simplifying grocery management and shopping
           </p>
           <div className="mt-8">
-            <ul className="flex flex-row md:gap-6 gap-20 font-bold text-black md:text-[10px] lg:text-[14px] text-[15px]">
+            <ul className="flex flex-row md:gap-6 gap-32 font-bold text-black md:text-[10px] lg:text-[14px] text-[15px]">
               <div className="flex md:flex-row flex-col gap-4 md:text-[16px] font-circular">
                 <Link href="./">
                   <li>Benefits</li>
@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="gap-2 flex md:flex-col flex-row w-full">
             <Link
               href="./"
-              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center font-bold text-[14px]"
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
               <FaApple className="text-white" />
@@ -62,7 +62,7 @@ export default function Footer() {
             </Link>
             <Link
               href="./"
-              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center font-bold text-[14px]"
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
               <FaPlay className="text-white" />
