@@ -4,8 +4,8 @@ import logo from '../HomeLayout/Assets/Images/Group.png'
 import { FaApple, FaPlay } from "react-icons/fa";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from 'next/link';
-import apple from "./Assets/images/apple.png";
-import andriod from "./Assets/images/andriod.png";
+import apple from "./Assets/Images/apple.png";
+import andriod from "./Assets/Images/andriod.png";
 
 export default function Footer() {
   return (
