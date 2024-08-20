@@ -16,7 +16,7 @@ module.exports = {
         "dark-color": "rgba(22, 22, 22, 1)",
       },
       fontFamily: {
-        circular: "Euclid Circular A",
+        circular:['Euclid Circular A'],
       },
     },
   },

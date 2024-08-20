@@ -9,11 +9,11 @@ import andriod from "../Assets/images/andriod.png";
 
 export default function Join() {
   return (
-    <div className="relative flex flex-col items-center w-full mt-10">
+    <div className="relative flex flex-col items-center w-full mt-10 py-24">
       {/* Background images */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Large screens */}
-        <div className="hidden lg:block md:block absolute inset-0 lg:h-[110vh]">
+        <div className="hidden lg:block md:block absolute inset-0">
           <Image src={Gross} alt="gross_image" className="w-full h-full" />
         </div>
         {/* Small screens */}
@@ -21,11 +21,10 @@ export default function Join() {
           <Image src={Gross1} alt="gross2_image" className="w-full h-full" />
         </div>
       </div>
-3
-      {/* Main content container */}
-      <div className="relative flex flex-col md:flex-row items-center justify-center pt-10 rounded-lg md:w-3/4 w-full gap-6">
-        <div className="flex-1 md:w-1/2 w-full text-center md:text-left lg:px-0 px-10">
-          <h2 className="font-semibold text-[24px] lg:text-[48px]  text-white lg:-mt-28 py-20 font-circular">
+      3{/* Main content container */}
+      <div className="relative flex flex-col lg:flex-row md:flex-col items-center justify-center pt-10 rounded-lg md:w-3/4 w-full gap-6">
+        <div className="flex-1 lg:w-1/2 w-full text-center md:text-left lg:px-0 px-10">
+          <h2 className="font-semibold text-[24px] lg:text-[48px]  text-white lg:-mt-52 -mt-24 lg:py-32 md:py-24 py-20 font-circular">
             Join thousands who simplify their grocery process with us
           </h2>
           <div className="flex flex-row gap-4 md:gap-6 justify-center lg:mt-0">
@@ -55,13 +54,11 @@ export default function Join() {
             </Link>
           </div>
         </div>
-        <div className="flex-shrink-0 lg:mt-[9.3rem]">
+        <div className="flex-shrink-0 lg:mt-[4rem] md:mt-0">
           <Image
             src={Join1}
             alt="grocery_image"
-            className="w-full max-w-xs md:max-w-sm lg:max-w-md object-cover"
-            width={400}
-            height={300}
+            className="w-full max-w-xs md:max-w-sm lg:max-w-md object-cover lg:w-[503.32px] md:w-[800px]"
           />
         </div>
       </div>

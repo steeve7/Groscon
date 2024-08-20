@@ -19,7 +19,7 @@ export default function Footer() {
             <Image src={logo} alt="cartImage" />
             groscan
           </Link>
-          <p className="text-black mt-6 text-[16px] w-full md:w-[40%] font-normal font-circular">
+          <p className="text-black mt-6 text-[16px] w-full md:w-[70%] font-normal font-circular">
             Your Ai Assistant for simplifying grocery management and shopping
           </p>
           <div className="mt-8">
@@ -35,7 +35,7 @@ export default function Footer() {
                   <li>FAQs</li>
                 </Link>
               </div>
-              <div className="flex md:flex-row flex-col gap-4 font-circular">
+              <div className="flex md:flex-row flex-col items-center gap-4 font-circular">
                 <Link href="./">
                   <li>Contact</li>
                 </Link>

@@ -22,7 +22,7 @@ export default function Grocery() {
             opacity: { duration: 1 },
             ease: "easeIn",
           }}
-          className="font-bold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-euclid text-dark-color lg:gap-10 md:gap-2 lg:mb-10"
+          className="font-semibold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-circular text-dark-color lg:gap-10 md:gap-2 lg:mb-10"
         >
           Grocery
           <span>Management,</span>

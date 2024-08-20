@@ -55,7 +55,7 @@ const toggleSection = (index) => {
 
 
   return (
-    <div className=" w-full lg:px-24 md:px-36 px-10" id="faqs">
+    <div className=" w-full lg:px-24  px-10" id="faqs">
       <div>
         <Subtitle
           title="Frequently Asked Questions"

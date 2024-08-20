@@ -59,7 +59,7 @@ export default function Ai() {
           </h2>
           {lists.map((list, i) => (
             <div key={i} className="flex flex-row items-center gap-2">
-              <Image src={list.icon} alt="check_icon"/>
+              <Image src={list.icon} alt="check_icon" className="md:w-[26.67px] w-[20px]"/>
               <h6 className="font-normal md:text-[18px] text-[16px] font-circular">
                 {list.title}
               </h6>
