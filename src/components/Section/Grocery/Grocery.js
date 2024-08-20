@@ -1,9 +1,10 @@
 'use client'
 import React from "react";
 import storeImage from "../Assets/images/Frame.png";
+import apple from '../Assets/images/apple.png'
+import andriod from '../Assets/images/andriod.png'
 import Link from "next/link";
 import Image from "next/image";
-import { FaApple, FaPlay } from "react-icons/fa";
 import {motion} from 'framer-motion'
 
 export default function Grocery() {
@@ -21,7 +22,7 @@ export default function Grocery() {
             opacity: { duration: 1 },
             ease: "easeIn",
           }}
-          className="font-bold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-euclid text-[#161616] lg:gap-10 md:gap-2 lg:mb-10"
+          className="font-bold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-euclid text-dark-color lg:gap-10 md:gap-2 lg:mb-10"
         >
           Grocery
           <span>Management,</span>
@@ -38,7 +39,7 @@ export default function Grocery() {
             opacity: { duration: 1 },
             ease: "easeIn",
           }}
-          className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-circular text-[#454545] font-normal"
+          className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-circular text-light-green font-normal"
         >
           Groscan is your personal AI grocery and nutrition assistant that
           simplifies grocery management by allowing you to scan your shopping
@@ -63,7 +64,7 @@ export default function Grocery() {
             className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
             style={{ background: "rgba(51, 101, 84, 1)" }}
           >
-            <FaApple className="text-white" />
+            <Image src={apple} alt="apple_image" />
             Get on iphone
           </Link>
           <Link
@@ -71,7 +72,7 @@ export default function Grocery() {
             className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
             style={{ background: "rgba(51, 101, 84, 1)" }}
           >
-            <FaPlay className="text-white" />
+            <Image src={andriod} alt="andriod_image" />
             Get on Andriod
           </Link>
         </motion.div>

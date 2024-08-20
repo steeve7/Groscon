@@ -18,11 +18,11 @@ export default function Features() {
       <div className="flex flex-col justify-center w-full mt-10 gap-10">
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full">
-            <h2 className="font-semibold md:text-[30px] text-[18px] font-circular">
+            <h2 className="font-medium md:text-[30px] text-[18px] font-circular">
               Grocery Management
             </h2>
             <p
-              className="lg:w-full md:w-full font-circular md:text-[18px] text-[14px]"
+              className="lg:w-full md:w-full font-circular md:text-[18px] text-[14px] font-normal"
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Scan shopping receipts to extract grocery details. Create shopping
@@ -39,11 +39,11 @@ export default function Features() {
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full md:order-2 order-1">
-            <h2 className="font-bold md:text-[30px] text-[18px] font-circular">
+            <h2 className="font-medium md:text-[30px] text-[18px] font-circular">
               Inventory Management
             </h2>
             <p
-              className="w-full font-circular md:text-[18px] text-[14px]"
+              className="w-full font-circular md:text-[18px] text-[14px] font-normal"
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Create spaces within the app to organise where you store your
@@ -62,11 +62,11 @@ export default function Features() {
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full">
-            <h2 className="font-bold md:text-[30px] text-[18px] font-circular">
+            <h2 className="font-medium md:text-[30px] text-[18px] font-circular">
               Expense Tracking
             </h2>
             <p
-              className="w-full font-circular md:text-[18px] text-[14px]"
+              className="w-full font-circular md:text-[18px] text-[14px] font-normal"
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Monitor your grocery spending with weekly, monthly, and yearly
@@ -84,11 +84,11 @@ export default function Features() {
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-1/2 w-full md:order-2 order-1">
-            <h2 className="font-bold md:text-[30px] text-[18px] font-circular">
+            <h2 className="font-meduim md:text-[30px] text-[18px] font-circular">
               Nutritional Information
             </h2>
             <p
-              className="w-full font-circular md:text-[18px] text-[14px]"
+              className="w-full font-circular md:text-[18px] text-[14px] font-normal"
               style={{ color: "rgba(69, 69, 69, 1)" }}
             >
               Scan items to view their nutritional information and suitability

@@ -3,24 +3,24 @@ import Image from "next/image";
 import Features5 from "../Assets/images/iphone.png";
 import Features6 from "../Assets/images/features5.png";
 import Features4 from "../Assets/images/Features6.png";
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import check from '../Assets/images/icon-check.png'
 
 export default function Ai() {
   const lists = [
     {
-      icon: <IoIosCheckmarkCircleOutline />,
+      icon: check,
       title: "Reduce food waste",
     },
     {
-      icon: <IoIosCheckmarkCircleOutline />,
+      icon: check,
       title: "Maintain financial discipline",
     },
     {
-      icon: <IoIosCheckmarkCircleOutline />,
+      icon: check,
       title: "Achieve dietary goals",
     },
     {
-      icon: <IoIosCheckmarkCircleOutline />,
+      icon: check,
       title: "Save time and effort",
     },
   ];
@@ -54,13 +54,13 @@ export default function Ai() {
       </div>
       <div className="flex md:flex-row flex-col justify-around items-center gap-6 bg-custom-gray py-20 px-7">
         <div className="flex flex-col text-left md:w-1/2 w-full gap-4">
-          <h2 className="font-bold lg:text-[48px] md:text-[30px] text-[24px] w-full font-circular text-black">
+          <h2 className="font-medium lg:text-[48px] md:text-[30px] text-[24px] w-full font-circular text-black">
             Your Path to Easier Grocery Management and Shopping
           </h2>
           {lists.map((list, i) => (
             <div key={i} className="flex flex-row items-center gap-2">
-              <p className="  text-orange-400">{list.icon}</p>
-              <h6 className="font-medium md:text-[18px] text-[9px] font-circular">
+              <Image src={list.icon} alt="check_icon"/>
+              <h6 className="font-normal md:text-[18px] text-[16px] font-circular">
                 {list.title}
               </h6>
             </div>

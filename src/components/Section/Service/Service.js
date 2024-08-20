@@ -26,47 +26,33 @@ export default function Service() {
     },
   ];
   return (
-    <div className="w-full md:px-5 px-7 py-8 bg-custom-gray" id="benefits">
-      <div>
+    <div className="w-full px-5 py-8 bg-custom-gray" id="benefits">
+      <div className="text-center">
         <Subtitle
           title="We are Your Grocery Companion"
           desc="We simplify the process of managing groceries and help you make informed nutritional choices."
         />
       </div>
-      <motion.div
-        className="w-full flex md:flex-row flex-col justify-center items-center mt-8 gap-6"
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{
-          delay: 0.2,
-          y: { type: "spring", stiffness: 60 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-        }}
-      >
+      <div className="w-full flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
         {items.map((item, i) => (
           <div
             key={i}
-            className="flex justify-center text-center items-center flex-col gap-4 md:w-[27%] w-full md:h-[400px] lg:h-[270px] py-10 px-10 mx-2 rounded-lg"
-            style={{ background: "rgba(230, 247, 230, 1)" }}
+            className="flex justify-center text-center items-center flex-col gap-4 w-full md:w-[357px] py-6 px-4 md:px-6 lg:h-[320px] md:h-[400px] rounded-lg bg-custom-green"
           >
             <Image
               src={item.icons}
               alt="icon_image"
-              className="lg:w-[20%] md:w-[40%]"
+              className="w-[64px] h-[64px] md:w-[88px] md:h-[88px]"
             />
-            <h3 className="font-semibold md:text-[24px] text-[18px] font-circular">
+            <h3 className="font-medium text-[16px] md:text-[24px] font-circular text-dark-green">
               {item.title}
             </h3>
-            <p
-              className="md:text-[18px] text-[14px] font-circular"
-              style={{ color: "rgba(69, 69, 69, 1)" }}
-            >
+            <p className="text-[12px] md:text-[18px] font-circular text-light-green">
               {item.desc}
             </p>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

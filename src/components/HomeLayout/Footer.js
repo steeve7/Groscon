@@ -4,10 +4,12 @@ import logo from '../HomeLayout/Assets/Images/Group.png'
 import { FaApple, FaPlay } from "react-icons/fa";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from 'next/link';
+import apple from "./Assets/images/apple.png";
+import andriod from "./Assets/images/andriod.png";
 
 export default function Footer() {
   return (
-    <div className="w-full md:px-20 px-7 mt-10 bg-white py-8">
+    <div className="w-full md:px-20 px-7 mt-36 bg-white py-8">
       <section className="flex md:flex-row flex-col justify-between w-full">
         <div className="md:w-[70%] w-full">
           <Link
@@ -57,7 +59,7 @@ export default function Footer() {
               className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
-              <FaApple className="text-white" />
+              <Image src={apple} alt="apple_image" />
               Get on iphone
             </Link>
             <Link
@@ -65,7 +67,7 @@ export default function Footer() {
               className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
-              <FaPlay className="text-white" />
+              <Image src={andriod} alt="andriod_image" />
               Get on Andriod
             </Link>
           </div>
@@ -94,7 +96,7 @@ export default function Footer() {
             className="font-normal text-[16px] md:order-1 order-2 font-circular"
             style={{ color: "rgba(148, 148, 148, 1)" }}
           >
-            @2024 Grascan. All rights reserved.
+            @2024 Groscan. All rights reserved.
           </p>
         </div>
       </section>

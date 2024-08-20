@@ -44,15 +44,19 @@ export default function Header() {
       <div className="flex justify-between md:py-7 py-4 md:px-20 px-7">
         <a
           href="./"
-          className="uppercase font-bold md:text-[18px] text-[14px] flex items-center justify-start gap-2 text-black font-circular"
+          className="uppercase font-medium md:text-[18px] text-[14px] flex items-center justify-start gap-2 text-black font-circular"
         >
           <Image src={logo} alt="cartImage" />
           groscan
         </a>
-        <ul className="justify-around gap-6 items-center md:flex flex-row hidden text-black font-bold uppercase font-circular">
+        <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-medium text-[16px] text-black uppercase font-circular">
           {menus.map((menu, i) => (
             <li key={i}>
-              <a href={menu.id} activeclass="active">
+              <a
+                href={menu.id}
+                activeclass="active"
+                className="hover:text-light-yellow"
+              >
                 {menu.label}
               </a>
             </li>
@@ -69,11 +73,11 @@ export default function Header() {
         </div>
         {/*Mobile Menu*/}
         <div
-          className={
-            menuSlide
-              ? "sm:hidden absolute top-10 left-0 right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
-              : "sm:hidden absolute top-10 left-[-100%] right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
-          }
+            className={
+              menuSlide
+                ? "sm:hidden absolute top-10 left-0 right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
+                : "sm:hidden absolute top-10 left-[-100%] right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
+            }
         >
           <ul className="mt-8">
             {menus.map((menu, i) => (
