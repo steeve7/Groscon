@@ -55,7 +55,7 @@ const toggleSection = (index) => {
 
 
   return (
-    <div className=" w-full" id="faqs">
+    <div className=" w-full lg:px-24 md:px-36 px-10" id="faqs">
       <div>
         <Subtitle
           title="Frequently Asked Questions"
@@ -66,7 +66,7 @@ const toggleSection = (index) => {
         {reads.map((read, index) => (
           <div
             key={index}
-            className="flex flex-row gap-3 justify-between border-b-2 mb-5 lg:px-24 md:px-36 px-10"
+            className="flex flex-row gap-3 justify-between border-b-2 mb-5 "
           >
             <div className="flex flex-col flex-1 mb-5">
               <h2 className="font-medium text-[18px] font-circular">
