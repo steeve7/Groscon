@@ -26,18 +26,16 @@ export default function Service() {
     },
   ];
   return (
-    <div className="w-full py-8 bg-custom-gray" id="benefits">
-      <div className="text-center mb-8">
+    <div className="w-full py-[96px] bg-custom-gray" id="benefits">
         <Subtitle
           title="We are Your Grocery Companion"
           desc="We simplify the process of managing groceries and help you make informed nutritional choices."
         />
-      </div>
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:px-0 px-5">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:px-0 px-5 mt-14">
         {items.map((item, i) => (
           <div
             key={i}
-            className="flex flex-col items-center gap-6 w-full sm:w-1/2 md:w-1/3 lg:w-[357px] py-6 md:py-10 rounded-lg bg-custom-green"
+            className="flex flex-col items-center gap-6 w-full sm:w-1/2 md:w-1/3 lg:w-[357px] py-6 rounded-lg bg-custom-green"
           >
             <Image
               src={item.icons}

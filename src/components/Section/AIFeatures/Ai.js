@@ -25,7 +25,7 @@ export default function Ai() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center w-full mt-10">
+    <div className="flex flex-col justify-center w-full">
       <div
         className="flex md:flex-row flex-col justify-around items-center w-full pt-10 mt-10"
         style={{ background: "rgba(241, 141, 61, 1)" }}

@@ -8,13 +8,11 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <div className="" id="feature">
-      <div>
+    <div className="w-full py-[96px]" id="feature">
         <Subtitle
           title="Explore Our Features"
           desc="We have everything you need to simplify grocery shopping and manage groceries."
         />
-      </div>
       <div className="flex flex-col justify-center w-full mt-10 gap-10 md:px-3 px-7">
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
           <div className="flex flex-col text-left md:w-[40%] w-full">
