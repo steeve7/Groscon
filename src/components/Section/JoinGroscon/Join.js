@@ -27,7 +27,7 @@ export default function Join() {
           <h2 className="font-semibold text-[24px] lg:text-[48px] text-light-white md:text-start text-center text-white lg:-mt-60 -mt-24 lg:py-32 md:py-24 py-20 font-circular">
             Join thousands who simplify their grocery process with us
           </h2>
-          <div className="flex flex-row gap-4 md:gap-6">
+          <div className="flex flex-row gap-4 md:gap-6 lg-mt-0 mt-5">
             <Link
               href="./"
               className="p-4 font-circular text-light-white rounded-[16px] flex gap-2 justify-center items-center font-semibold md:text-[16px] text-[12px] w-full md:w-1/2 lg:w-[40%] bg-dark-brown"

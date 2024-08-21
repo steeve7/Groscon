@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <div className="w-full py-[96px]" id="feature">
+    <div className="w-full py-[70px]" id="feature">
         <Subtitle
           title="Explore Our Features"
           desc="We have everything you need to simplify grocery shopping and manage groceries."
