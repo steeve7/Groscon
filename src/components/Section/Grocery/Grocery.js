@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import storeImage from "../Assets/images/Frame.PNG";
+import Frame from '../Assets/images/Frame.PNG'
 import apple from '../Assets/images/apple.png'
 import andriod from '../Assets/images/andriod.png'
 import Link from "next/link";
@@ -90,7 +90,7 @@ export default function Grocery() {
         }}
       >
         <Image
-          src={storeImage}
+          src={Frame}
           alt="Grocery Management"
           className="md:w-[402px] w-[350px] object-contain"
         />
