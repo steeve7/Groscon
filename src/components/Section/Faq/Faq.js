@@ -55,7 +55,7 @@ const toggleSection = (index) => {
 
 
   return (
-    <div className="w-full py-[70px]" id="faqs">
+    <div className="w-full md:py-[60px] py-10" id="faqs">
       <div>
         <Subtitle
           title="Frequently Asked Questions"

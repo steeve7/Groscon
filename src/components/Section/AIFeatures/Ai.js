@@ -52,7 +52,7 @@ export default function Ai() {
           />
         </div>
       </div>
-      <div className="flex md:flex-row flex-col justify-around items-center gap-6 bg-custom-gray py-20 lg:px-4 px-5">
+      <div className="flex md:flex-row flex-col justify-around items-center gap-6 bg-custom-gray py-20 lg:px-4 px-7">
         <div className="flex flex-col text-left md:w-[40%] w-full gap-4">
           <h2 className="font-semibold lg:text-[48px] md:text-[30px] text-[24px] w-full font-circular text-dark-color">
             Your Path to Easier Grocery Management and Shopping

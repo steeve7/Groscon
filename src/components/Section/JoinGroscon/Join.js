@@ -9,7 +9,7 @@ import andriod from "../Assets/images/andriod.png";
 
 export default function Join() {
   return (
-    <div className="relative flex flex-col items-center w-full mt-10 py-24">
+    <div className="relative flex flex-col items-center w-full py-24">
       {/* Background images */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Large screens */}
