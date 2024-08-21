@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Features5 from "../Assets/images/iphone.PNG";
+import Features5 from "../Assets/images/iphone.png";
 import Features6 from "../Assets/images/features5.png";
 import Features4 from "../Assets/images/Features6.png";
 import check from '../Assets/images/icon-check.png'

@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import Frame from '../Assets/images/Frame.PNG'
+import Frame from '../Assets/images/Frame.png'
 import apple from '../Assets/images/apple.png'
 import andriod from '../Assets/images/andriod.png'
 import Link from "next/link";
