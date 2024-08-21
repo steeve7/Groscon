@@ -8,8 +8,8 @@ import { MdMenu, MdClose } from "react-icons/md";
 import logo from "../HomeLayout/Assets/Images/Group.png";
 
 const menus = [
-  { id: "#benefits", label: "Benefits" },
-  { id: "#feature", label: "Feature" },
+  { id: "#benefits", label: "BENEFITS" },
+  { id: "#feature", label: "FEATURES" },
   { id: "#faqs", label: "FAQs" },
 ];
 
@@ -49,7 +49,7 @@ export default function Header() {
           <Image src={logo} alt="cartImage" />
           groscan
         </a>
-        <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-medium text-[16px] text-black uppercase font-circular">
+        <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-medium text-[16px] text-dark-color font-circular">
           {menus.map((menu, i) => (
             <li key={i}>
               <a
@@ -73,11 +73,11 @@ export default function Header() {
         </div>
         {/*Mobile Menu*/}
         <div
-            className={
-              menuSlide
-                ? "sm:hidden absolute top-10 left-0 right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
-                : "sm:hidden absolute top-10 left-[-100%] right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
-            }
+          className={
+            menuSlide
+              ? "sm:hidden absolute top-10 left-0 right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
+              : "sm:hidden absolute top-10 left-[-100%] right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
+          }
         >
           <ul className="mt-8">
             {menus.map((menu, i) => (

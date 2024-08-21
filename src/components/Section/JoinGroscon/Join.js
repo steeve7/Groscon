@@ -1,5 +1,5 @@
 import React from "react";
-import Join1 from "../Assets/images/join.png";
+import Join1 from "../Assets/images/join.PNG";
 import Image from "next/image";
 import Link from "next/link";
 import Gross from "../Assets/images/grossy.JPG";
@@ -22,33 +22,31 @@ export default function Join() {
         </div>
       </div>
       3{/* Main content container */}
-      <div className="relative flex flex-col lg:flex-row md:flex-col items-center justify-center pt-10 rounded-lg md:w-3/4 w-full gap-6">
-        <div className="flex-1 lg:w-1/2 w-full text-center md:text-left lg:px-0 px-10">
-          <h2 className="font-semibold text-[24px] lg:text-[48px]  text-white lg:-mt-52 -mt-24 lg:py-32 md:py-24 py-20 font-circular">
+      <div className="relative flex flex-col lg:flex-row md:flex-col items-center justify-center pt-10 md:w-3/4 w-full gap-6">
+        <div className="flex-1 lg:w-1/2 w-full lg:px-3 px-10">
+          <h2 className="font-semibold text-[24px] lg:text-[48px] text-light-white md:text-start text-center text-white lg:-mt-60 -mt-24 lg:py-32 md:py-24 py-20 font-circular">
             Join thousands who simplify their grocery process with us
           </h2>
-          <div className="flex flex-row gap-4 md:gap-6 justify-center lg:mt-0">
+          <div className="flex flex-row gap-4 md:gap-6">
             <Link
               href="./"
-              className="p-4 font-circular text-white rounded-[16px] flex gap-2 justify-center items-center font-bold text-[0.6rem] md:text-base lg:text-lg w-full md:w-1/2 lg:w-[40%]"
-              style={{ background: "rgba(51, 101, 84, 1)" }}
+              className="p-4 font-circular text-light-white rounded-[16px] flex gap-2 justify-center items-center font-semibold md:text-[16px] text-[12px] w-full md:w-1/2 lg:w-[40%] bg-dark-brown"
             >
               <Image
                 src={apple}
                 alt="apple_image"
-                className="w-[0.7rem] md:w-[1rem] lg:w-[1.125rem]"
+                className="w-[18px] md:w-[21px]"
               />
               Get on iPhone
             </Link>
             <Link
               href="./"
-              className="p-4 font-circular text-white rounded-[16px] gap-2 flex justify-center items-center font-bold text-[0.6rem] md:text-base lg:text-lg w-full md:w-1/2 lg:w-[40%]"
-              style={{ background: "rgba(51, 101, 84, 1)" }}
+              className="p-4 font-circular text-light-white rounded-[16px] gap-2 flex justify-center items-center font-semibold md:text-[16px] text-[12px] w-full md:w-1/2 lg:w-[40%] bg-dark-brown"
             >
               <Image
                 src={andriod}
                 alt="apple_image"
-                className="w-[0.7rem] md:w-[1rem] lg:w-[1.125rem]"
+                className="w-[18px] md:w-[21px]"
               />
               Get on Android
             </Link>

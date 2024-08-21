@@ -9,7 +9,7 @@ import andriod from "./Assets/Images/andriod.png";
 
 export default function Footer() {
   return (
-    <div className="w-full md:px-20 px-7 mt-36 bg-white py-8">
+    <div className="w-full md:px-20 px-7 mt-10 bg-white py-8">
       <section className="flex md:flex-row flex-col justify-between w-full">
         <div className="md:w-[70%] w-full">
           <Link
@@ -19,11 +19,11 @@ export default function Footer() {
             <Image src={logo} alt="cartImage" />
             groscan
           </Link>
-          <p className="text-black mt-6 text-[16px] w-full md:w-[70%] font-normal font-circular">
+          <p className="text-black mt-6 text-[16px] w-full lg:w-[40%] md:w-[70%] font-normal font-circular text-light-green">
             Your Ai Assistant for simplifying grocery management and shopping
           </p>
           <div className="mt-8">
-            <ul className="flex flex-row md:gap-6 gap-32 font-bold text-black md:text-[10px] lg:text-[14px] text-[15px]">
+            <ul className="flex flex-row md:gap-6 gap-32 font-medium text-dark-color md:text-[10px] lg:text-[16px] text-[15px]">
               <div className="flex md:flex-row flex-col gap-4 md:text-[16px] font-circular">
                 <Link href="./">
                   <li>Benefits</li>
@@ -50,24 +50,31 @@ export default function Footer() {
           </div>
         </div>
         <div className="md:mt-0 mt-6">
-          <h1 className="text-black font-bold sm:text-[15px] text-[10px] mb-2">
+          <h1 className="text-dark-color font-medium sm:text-[16px] text-[14px] mb-2">
             Get the app
           </h1>
           <div className="gap-2 flex md:flex-col flex-row w-full">
             <Link
               href="./"
-              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown"
               style={{ background: "rgba(51, 101, 84, 1)" }}
             >
-              <Image src={apple} alt="apple_image" />
+              <Image
+                src={apple}
+                alt="apple_image"
+                className="w-[18px] md:w-[21px]"
+              />
               Get on iphone
             </Link>
             <Link
               href="./"
-              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
-              style={{ background: "rgba(51, 101, 84, 1)" }}
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown"
             >
-              <Image src={andriod} alt="andriod_image" />
+              <Image
+                src={andriod}
+                alt="andriod_image"
+                className="w-[18px] md:w-[21px]"
+              />
               Get on Andriod
             </Link>
           </div>
@@ -76,9 +83,7 @@ export default function Footer() {
       <section className="text-black mt-16">
         <div className="flex md:flex-row flex-col gap-4 justify-between">
           <div
-            className="flex flex-row text-end gap-4 sm:text-[15px] text-[12px] md:order-2 order-1 font-circular"
-            style={{ color: "rgba(148, 148, 148, 1)" }}
-          >
+            className="flex flex-row text-end gap-4 sm:text-[15px] text-[12px] md:order-2 order-1 font-circular text-light-gray">
             <Link href="./">
               <FaInstagram />
             </Link>
@@ -93,9 +98,7 @@ export default function Footer() {
             </Link>
           </div>
           <p
-            className="font-normal text-[16px] md:order-1 order-2 font-circular"
-            style={{ color: "rgba(148, 148, 148, 1)" }}
-          >
+            className="font-normal text-[16px] md:order-1 order-2 font-circular text-light-gray">
             @2024 Groscan. All rights reserved.
           </p>
         </div>

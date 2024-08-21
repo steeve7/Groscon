@@ -8,23 +8,20 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <div className="md:px-10 px-7" id="feature">
+    <div className="" id="feature">
       <div>
         <Subtitle
           title="Explore Our Features"
           desc="We have everything you need to simplify grocery shopping and manage groceries."
         />
       </div>
-      <div className="flex flex-col justify-center w-full mt-10 gap-10">
+      <div className="flex flex-col justify-center w-full mt-10 gap-10 md:px-3 px-7">
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
-          <div className="flex flex-col text-left md:w-1/2 w-full">
-            <h2 className="font-medium md:text-[30px] text-[18px] font-circular">
+          <div className="flex flex-col text-left md:w-[40%] w-full">
+            <h2 className="font-medium md:text-[36px] text-[18px] font-circular text-dark-color">
               Grocery Management
             </h2>
-            <p
-              className="lg:w-full md:w-full font-circular md:text-[18px] text-[14px] font-normal"
-              style={{ color: "rgba(69, 69, 69, 1)" }}
-            >
+            <p className="lg:w-full md:w-full font-circular md:text-[18px] text-[14px] font-normal text-light-green">
               Scan shopping receipts to extract grocery details. Create shopping
               lists for upcoming trips to the grocery store.
             </p>
@@ -38,14 +35,11 @@ export default function Features() {
           </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
-          <div className="flex flex-col text-left md:w-1/2 w-full md:order-2 order-1">
-            <h2 className="font-medium md:text-[30px] text-[18px] font-circular">
+          <div className="flex flex-col text-left md:w-[40%] w-full md:order-2 order-1">
+            <h2 className="font-medium md:text-[36px] text-[18px] font-circular text-dark-color">
               Inventory Management
             </h2>
-            <p
-              className="w-full font-circular md:text-[18px] text-[14px] font-normal"
-              style={{ color: "rgba(69, 69, 69, 1)" }}
-            >
+            <p className="w-full font-circular md:text-[18px] text-[14px] font-normal text-light-green">
               Create spaces within the app to organise where you store your
               groceries in real life. Get timely reminders when items are
               nearing their expiry date. Receive reminders to update item
@@ -61,14 +55,11 @@ export default function Features() {
           </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
-          <div className="flex flex-col text-left md:w-1/2 w-full">
-            <h2 className="font-medium md:text-[30px] text-[18px] font-circular">
+          <div className="flex flex-col text-left md:w-[40%] w-full">
+            <h2 className="font-medium md:text-[36px] text-[18px] font-circular text-dark-color">
               Expense Tracking
             </h2>
-            <p
-              className="w-full font-circular md:text-[18px] text-[14px] font-normal"
-              style={{ color: "rgba(69, 69, 69, 1)" }}
-            >
+            <p className="w-full font-circular md:text-[18px] text-[14px] font-normal text-light-green">
               Monitor your grocery spending with weekly, monthly, and yearly
               reports. Set monthly budgets and track your spending to stay
               within your budget.
@@ -83,14 +74,11 @@ export default function Features() {
           </div>
         </div>
         <div className="flex md:flex-row flex-col justify-around items-center gap-4 md:gap-0">
-          <div className="flex flex-col text-left md:w-1/2 w-full md:order-2 order-1">
-            <h2 className="font-meduim md:text-[30px] text-[18px] font-circular">
+          <div className="flex flex-col text-left md:w-[40%] w-full md:order-2 order-1">
+            <h2 className="font-medium md:text-[36px] text-[18px] font-circular text-dark-color">
               Nutritional Information
             </h2>
-            <p
-              className="w-full font-circular md:text-[18px] text-[14px] font-normal"
-              style={{ color: "rgba(69, 69, 69, 1)" }}
-            >
+            <p className="w-full font-circular md:text-[18px] text-[14px] font-normal text-light-green">
               Scan items to view their nutritional information and suitability
               based on dietary preferences.
             </p>

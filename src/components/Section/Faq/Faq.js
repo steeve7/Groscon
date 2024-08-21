@@ -55,25 +55,25 @@ const toggleSection = (index) => {
 
 
   return (
-    <div className=" w-full lg:px-24  px-10" id="faqs">
+    <div className=" w-full" id="faqs">
       <div>
         <Subtitle
           title="Frequently Asked Questions"
           desc="Everything you need to know about Groscan"
         />
       </div>
-      <div className="mt-16">
+      <div className="mt-16 lg:px-24  px-10">
         {reads.map((read, index) => (
           <div
             key={index}
             className="flex flex-row gap-3 justify-between border-b-2 mb-5 "
           >
             <div className="flex flex-col flex-1 mb-5">
-              <h2 className="font-medium text-[18px] font-circular">
+              <h2 className="font-medium text-[18px] font-circular text-dark-color">
                 {read.question}
               </h2>
               {openSections[index] && (
-                <p className="text-[14px] font-normal font-circular w-full mt-2 text-light-green">
+                <p className="text-[16px] font-normal font-circular w-full mt-2 text-light-green">
                   {read.answer}
                 </p>
               )}
@@ -88,7 +88,10 @@ const toggleSection = (index) => {
                   className="text-orange-600"
                 />
               ) : (
-                <IoIosAddCircleOutline size={20} className="text-orange-600" />
+                <IoIosAddCircleOutline
+                  size={20}
+                  className="text-lighter-green"
+                />
               )}
             </div>
           </div>

@@ -26,30 +26,34 @@ export default function Service() {
     },
   ];
   return (
-    <div className="w-full px-5 py-8 bg-custom-gray" id="benefits">
-      <div className="text-center">
+    <div className="w-full py-8 bg-custom-gray" id="benefits">
+      <div className="text-center mb-8">
         <Subtitle
           title="We are Your Grocery Companion"
           desc="We simplify the process of managing groceries and help you make informed nutritional choices."
         />
       </div>
-      <div className="w-full flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:px-0 px-5">
         {items.map((item, i) => (
           <div
             key={i}
-            className="flex justify-center text-center items-center flex-col gap-4 w-full md:w-[357px] py-6 px-4 md:px-6 lg:h-[320px] md:h-[400px] rounded-lg bg-custom-green"
+            className="flex flex-col items-center gap-6 w-full sm:w-1/2 md:w-1/3 lg:w-[357px] py-6 md:py-10 rounded-lg bg-custom-green"
           >
             <Image
               src={item.icons}
               alt="icon_image"
-              className="w-[64px] h-[64px] md:w-[88px] md:h-[88px]"
+              className="w-[72px] sm:w-[88px]"
+              width={72} // Adjust width according to your requirements
+              height={72} // Adjust height according to your requirements
             />
-            <h3 className="font-medium text-[16px] md:text-[24px] font-circular text-dark-green">
-              {item.title}
-            </h3>
-            <p className="text-[12px] md:text-[18px] font-circular text-light-green">
-              {item.desc}
-            </p>
+            <div className="w-full flex flex-col gap-4 px-5 md:px-0">
+              <h3 className="font-semibold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-circular text-dark-color text-center">
+                {item.title}
+              </h3>
+              <p className="text-[14px] sm:text-[16px] md:text-[18px] font-circular text-light-green font-normal text-center">
+                {item.desc}
+              </p>
+            </div>
           </div>
         ))}
       </div>

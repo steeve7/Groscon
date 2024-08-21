@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import storeImage from "../Assets/images/Frame.png";
+import storeImage from "../Assets/images/Frame.PNG";
 import apple from '../Assets/images/apple.png'
 import andriod from '../Assets/images/andriod.png'
 import Link from "next/link";
@@ -9,9 +9,9 @@ import {motion} from 'framer-motion'
 
 export default function Grocery() {
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center w-full lg:py-36 md:py-20 py-[3rem] md:px-16 px-7 space-y-10 md:space-y-0 bg-[#e6f7e6]">
+    <div className="flex flex-col md:flex-row justify-around items-center w-full lg:py-36 md:py-20 py-[3rem] space-y-14 md:space-y-0 md:px-14 px-7 bg-[#e6f7e6]">
       {/* Text Content */}
-      <div className="lg:w-[55%] md:w-full space-y-5 lg:mt-0 mt-16">
+      <div className="lg:w-[600px] md:w-full space-y-5 lg:mt-0 mt-16">
         {/* Title */}
         <motion.h2
           initial={{ x: -100, opacity: 0 }}
@@ -65,7 +65,7 @@ export default function Grocery() {
             style={{ background: "rgba(51, 101, 84, 1)" }}
           >
             <Image src={apple} alt="apple_image" />
-            Get on iphone
+            Get on iPhone
           </Link>
           <Link
             href="./"
@@ -73,7 +73,7 @@ export default function Grocery() {
             style={{ background: "rgba(51, 101, 84, 1)" }}
           >
             <Image src={andriod} alt="andriod_image" />
-            Get on Andriod
+            Get on Android
           </Link>
         </motion.div>
       </div>
