@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="md:w-[70%] w-full">
           <Link
             href="./"
-            className="uppercase font-bold text-[15px] flex items-center justify-start gap-2 text-black font-circular"
+            className="uppercase font-semibold text-[15px] flex items-center justify-start gap-2 text-black font-circular"
           >
             <Image src={logo} alt="cartImage" />
             groscan

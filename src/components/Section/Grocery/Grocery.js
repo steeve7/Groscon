@@ -92,7 +92,7 @@ export default function Grocery() {
         <Image
           src={Frame}
           alt="Grocery Management"
-          className="md:w-[402px] w-[350px] object-contain"
+          className="md:w-[462px] w-[350px] object-contain"
         />
       </motion.div>
     </div>
