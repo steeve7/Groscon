@@ -25,7 +25,7 @@ export default function Join() {
       </div>
       3{/* Main content container */}
       <div className="relative flex flex-col lg:flex-row md:flex-col items-center justify-center pt-10 md:w-3/4 w-full gap-6">
-        <div className="flex-1 lg:w-1/2 w-full lg:px-3 px-10">
+        <div className="flex-1 lg:w-1/2 w-full lg:px-3 px-8">
           <motion.h2
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -54,8 +54,7 @@ export default function Join() {
           >
             <Link
               href="./"
-              className="p-4 font-circular text-light-white rounded-[16px] flex gap-2 justify-center items-center font-semibold md:text-[16px] text-[12px] w-full md:w-1/2 lg:w-[40%] bg-dark-brown"
-            >
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
               <Image
                 src={apple}
                 alt="apple_image"
@@ -65,8 +64,7 @@ export default function Join() {
             </Link>
             <Link
               href="./"
-              className="p-4 font-circular text-light-white rounded-[16px] gap-2 flex justify-center items-center font-semibold md:text-[16px] text-[12px] w-full md:w-1/2 lg:w-[40%] bg-dark-brown"
-            >
+              className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
               <Image
                 src={andriod}
                 alt="apple_image"

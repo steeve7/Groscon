@@ -42,10 +42,7 @@ export default function Header() {
       }`}
     >
       <div className="flex justify-between md:py-7 py-4 md:px-20 px-7">
-        <a
-          href="./"
-          className="flex items-center justify-start gap-2 "
-        >
+        <a href="./" className="flex items-center justify-start gap-2 ">
           <Image src={logo} alt="cartImage" className="w-[148px]" />
         </a>
         <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-medium text-[16px] text-dark-color font-circular">
@@ -74,15 +71,15 @@ export default function Header() {
         <div
           className={
             menuSlide
-              ? "sm:hidden absolute top-10 left-0 right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
-              : "sm:hidden absolute top-10 left-[-100%] right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
+              ? "sm:hidden absolute top-14 left-0 right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
+              : "sm:hidden absolute top-14 left-[-100%] right-0 bottom-0 w-full h-screen bg-custom-green text-center ease-in duration-700 text-black"
           }
         >
           <ul className="mt-8">
             {menus.map((menu, i) => (
               <li
                 key={i}
-                className="p-4 text-[18px] hover:text-gray-500 border-b-2 py-4 font-circular"
+                className="p-4 hover:text-gray-500 border-b-2 py-4 font-medium text-[16px] text-dark-color font-circular"
               >
                 <a href={menu.id}>{menu.label}</a>
               </li>

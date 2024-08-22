@@ -61,9 +61,7 @@ export default function Grocery() {
         >
           <Link
             href="./"
-            className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
-            style={{ background: "rgba(51, 101, 84, 1)" }}
-          >
+            className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
             <Image
               src={apple}
               alt="apple_image"
@@ -73,9 +71,7 @@ export default function Grocery() {
           </Link>
           <Link
             href="./"
-            className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
-            style={{ background: "rgba(51, 101, 84, 1)" }}
-          >
+            className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
             <Image
               src={andriod}
               alt="andriod_image"
