@@ -75,7 +75,7 @@ export default function Ai() {
           <Image
             src={Features4}
             alt="features_image"
-            className="md:w-[390px] w-[343px]"
+            className="md:w-[390px] w-[344px]"
           />
         </div>
       </div>
