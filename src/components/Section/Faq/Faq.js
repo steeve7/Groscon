@@ -2,6 +2,7 @@
 import Subtitle from "@/components/Reuse/Subtitle";
 import React, {useState} from "react";
 import { IoMdRemoveCircleOutline, IoIosAddCircleOutline } from "react-icons/io";
+import {motion} from 'framer-motion'
 
 export default function Faq() {
   // Array to keep track of which sections are open
@@ -64,9 +65,18 @@ const toggleSection = (index) => {
       </div>
       <div className="mt-16 lg:px-24  px-10">
         {reads.map((read, index) => (
-          <div
+          <motion.div
             key={index}
-            className="flex flex-row gap-3 justify-between border-b-2 mb-5 "
+            className="flex flex-row gap-3 justify-between border-b-2 mb-5"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.2 },
+              ease: "easeIn",
+              duration: 1,
+            }}
           >
             <div className="flex flex-col flex-1 mb-5">
               <h2 className="font-medium text-[18px] font-circular text-dark-color">
@@ -94,7 +104,7 @@ const toggleSection = (index) => {
                 />
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

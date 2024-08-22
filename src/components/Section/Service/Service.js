@@ -26,7 +26,7 @@ export default function Service() {
     },
   ];
   return (
-    <div
+    <motion.div
       className="w-full py-[96px] bg-custom-gray"
       id="benefits"
      
@@ -40,9 +40,18 @@ export default function Service() {
         
       >
         {items.map((item, i) => (
-          <div
+          <motion.div
             key={i}
             className="flex flex-col items-center gap-6 w-full sm:w-1/2 md:w-1/3 lg:w-[357px] py-6 rounded-lg bg-custom-green"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.2 },
+              ease: "easeIn",
+              duration: 1,
+            }}
           >
             <Image
               src={item.icons}
@@ -59,9 +68,9 @@ export default function Service() {
                 {item.desc}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
