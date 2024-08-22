@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
-import logo from '../HomeLayout/Assets/Images/Group.png'
-import { FaApple, FaPlay } from "react-icons/fa";
+import logo from '../HomeLayout/Assets/Images/logo.png'
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from 'next/link';
 import apple from "./Assets/Images/apple.png";
-import andriod from "./Assets/Images/andriod.png";
+import andriod from "./Assets/Images/android.png";
 
 export default function Footer() {
   return (
@@ -14,13 +13,12 @@ export default function Footer() {
         <div className="md:w-[70%] w-full">
           <Link
             href="./"
-            className="uppercase font-semibold text-[15px] flex items-center justify-start gap-2 text-black font-circular"
+            className="flex items-center justify-start gap-2"
           >
-            <Image src={logo} alt="cartImage" />
-            groscan
+            <Image src={logo} alt="cartImage" className="w-[148px]" />
           </Link>
           <p className="text-black mt-6 text-[16px] w-full lg:w-[40%] md:w-[70%] font-normal font-circular text-light-green">
-            Your Ai Assistant for simplifying grocery management and shopping
+            Your AI Assistant for simplifying grocery management and shopping
           </p>
           <div className="mt-8">
             <ul className="flex flex-row md:gap-6 gap-32 font-medium text-dark-color md:text-[10px] lg:text-[16px] text-[15px]">
@@ -82,8 +80,7 @@ export default function Footer() {
       </section>
       <section className="text-black mt-16">
         <div className="flex md:flex-row flex-col gap-4 justify-between">
-          <div
-            className="flex flex-row text-end gap-4 sm:text-[15px] text-[12px] md:order-2 order-1 font-circular text-light-gray">
+          <div className="flex flex-row text-end gap-4 sm:text-[24px] md:order-2 order-1 font-circular text-light-gray">
             <Link href="./">
               <FaInstagram />
             </Link>
@@ -97,8 +94,7 @@ export default function Footer() {
               <FaTwitter />
             </Link>
           </div>
-          <p
-            className="font-normal text-[16px] md:order-1 order-2 font-circular text-light-gray">
+          <p className="font-normal text-[16px] md:order-1 order-2 font-circular text-light-gray">
             @2024 Groscan. All rights reserved.
           </p>
         </div>

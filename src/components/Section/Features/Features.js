@@ -1,9 +1,9 @@
 import Subtitle from "@/components/Reuse/Subtitle";
 import React from "react";
-import Feature from "../Assets/images/Features.png";
-import Feature1 from "../Assets/images/Features2.png";
-import Feature2 from "../Assets/images/Features3.png";
-import Feature3 from "../Assets/images/Features4.png";
+import Feature from "../Assets/images/feature1.png";
+import Feature1 from "../Assets/images/feature2.png";
+import Feature2 from "../Assets/images/feature3.png";
+import Feature3 from "../Assets/images/feature4.png";
 import Image from "next/image";
 
 export default function Features() {

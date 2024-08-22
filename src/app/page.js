@@ -10,19 +10,18 @@ import Service from '@/components/Section/Service/Service';
 export default function Home() {
   return (
     <div>
-    <div className='w-full'>
-      <Header />
-      <div>
-        <Grocery />
-        <Service />
-        <Features />
-        <Ai />
-        <Faq />
-        <Join />
+      <div className="w-full  overflow-x-hidden">
+        <Header />
+        <div>
+          <Grocery />
+          <Service />
+          <Features />
+          <Ai />
+          <Faq />
+          <Join />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
-      
-    </div>
-  )
+  );
 }

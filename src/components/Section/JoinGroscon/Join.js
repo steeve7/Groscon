@@ -5,7 +5,7 @@ import Link from "next/link";
 import Gross from "../Assets/images/grossy.JPG";
 import Gross1 from "../Assets/images/Grossymobile.JPG";
 import apple from "../Assets/images/apple.png";
-import andriod from "../Assets/images/andriod.png";
+import andriod from "../Assets/images/android.png";
 
 export default function Join() {
   return (

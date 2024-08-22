@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
-import Frame from '../Assets/images/Frame.png'
+import Frame from '../Assets/images/hero.png'
 import apple from '../Assets/images/apple.png'
-import andriod from '../Assets/images/andriod.png'
+import andriod from '../Assets/images/android.png'
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from 'framer-motion'
@@ -64,7 +64,11 @@ export default function Grocery() {
             className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
             style={{ background: "rgba(51, 101, 84, 1)" }}
           >
-            <Image src={apple} alt="apple_image" />
+            <Image
+              src={apple}
+              alt="apple_image"
+              className="w-[18px] md:w-[21px]"
+            />
             Get on iPhone
           </Link>
           <Link
@@ -72,7 +76,11 @@ export default function Grocery() {
             className="p-4 font-circular lg:w-[30%] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-bold text-[14px]"
             style={{ background: "rgba(51, 101, 84, 1)" }}
           >
-            <Image src={andriod} alt="andriod_image" />
+            <Image
+              src={andriod}
+              alt="andriod_image"
+              className="w-[18px] md:w-[21px]"
+            />
             Get on Android
           </Link>
         </motion.div>

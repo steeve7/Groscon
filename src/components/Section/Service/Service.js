@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
-import icon from "../Assets/images/Icon.png";
-import icon2 from "../Assets/images/Icon (1).png";
-import icon3 from "../Assets/images/Icon (2).png";
+import icon from "../Assets/images/service1.png";
+import icon2 from "../Assets/images/servicee2.png";
+import icon3 from "../Assets/images/service3.png";
 import Subtitle from "@/components/Reuse/Subtitle";
 import Image from "next/image";
 import {motion} from 'framer-motion'
@@ -26,12 +26,19 @@ export default function Service() {
     },
   ];
   return (
-    <div className="w-full py-[96px] bg-custom-gray" id="benefits">
-        <Subtitle
-          title="We are Your Grocery Companion"
-          desc="We simplify the process of managing groceries and help you make informed nutritional choices."
-        />
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:px-0 px-5 mt-14">
+    <div
+      className="w-full py-[96px] bg-custom-gray"
+      id="benefits"
+     
+    >
+      <Subtitle
+        title="We are Your Grocery Companion"
+        desc="We simplify the process of managing groceries and help you make informed nutritional choices."
+      />
+      <div
+        className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:px-0 px-5 mt-14"
+        
+      >
         {items.map((item, i) => (
           <div
             key={i}

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 // import { motion } from "framer-motion";
 import Image from "next/image";
 import { MdMenu, MdClose } from "react-icons/md";
-import logo from "../HomeLayout/Assets/Images/Group.png";
+import logo from "../HomeLayout/Assets/Images/logo.png";
 
 const menus = [
   { id: "#benefits", label: "BENEFITS" },
@@ -44,10 +44,9 @@ export default function Header() {
       <div className="flex justify-between md:py-7 py-4 md:px-20 px-7">
         <a
           href="./"
-          className="uppercase font-medium md:text-[18px] text-[14px] flex items-center justify-start gap-2 text-black font-circular"
+          className="flex items-center justify-start gap-2 "
         >
-          <Image src={logo} alt="cartImage" />
-          groscan
+          <Image src={logo} alt="cartImage" className="w-[148px]" />
         </a>
         <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-medium text-[16px] text-dark-color font-circular">
           {menus.map((menu, i) => (
