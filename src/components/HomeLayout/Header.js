@@ -1,11 +1,10 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-// import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
-// import { motion } from "framer-motion";
 import Image from "next/image";
-import { MdMenu, MdClose } from "react-icons/md";
 import logo from "../HomeLayout/Assets/Images/logo.png";
+import menuopen from '../HomeLayout/Assets/Images/menu-01.png'
+import menuclose from '../HomeLayout/Assets/Images/x-close.png'
 
 const menus = [
   { id: "#benefits", label: "BENEFITS" },
@@ -62,9 +61,9 @@ export default function Header() {
         {/*  Mobile Button*/}
         <div className="block sm:hidden z-10" onClick={handleOpen}>
           {menuSlide ? (
-            <MdClose size={20} className="text-black" />
+            <Image src={menuclose} alt="menu-open" className="w-[32px] text-dark-color" />
           ) : (
-            <MdMenu size={20} className="text-black" />
+            <Image src={menuopen} alt="menu-close" className="w-[32px] text-dark-color" />
           )}
         </div>
         {/*Mobile Menu*/}
@@ -79,7 +78,7 @@ export default function Header() {
             {menus.map((menu, i) => (
               <li
                 key={i}
-                className="p-4 hover:text-gray-500 border-b-2 py-4 font-medium text-[16px] text-dark-color font-circular"
+                className="p-4 hover:text-gray-500 border-b-2 py-4 font-medium text-[18px] text-dark-color font-circular"
               >
                 <a href={menu.id}>{menu.label}</a>
               </li>

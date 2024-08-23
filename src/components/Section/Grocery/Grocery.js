@@ -1,11 +1,9 @@
-'use client'
 import React from "react";
 import Frame from '../Assets/images/hero.png'
 import apple from '../Assets/images/apple.png'
 import andriod from '../Assets/images/android.png'
 import Link from "next/link";
 import Image from "next/image";
-import {motion} from 'framer-motion'
 
 export default function Grocery() {
   return (
@@ -13,55 +11,34 @@ export default function Grocery() {
       {/* Text Content */}
       <div className="lg:w-[600px] md:w-full space-y-5 lg:mt-0 mt-16">
         {/* Title */}
-        <motion.h2
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}
+        <h2
+          
           className="font-semibold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-circular text-dark-color lg:gap-10 md:gap-2 lg:mb-10"
         >
           Grocery
           <span>Management,</span>
           <span>Simplified for you</span>
-        </motion.h2>
+        </h2>
 
         {/* Description */}
-        <motion.p
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.4,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}
+        <p
+          
           className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-circular text-light-green font-normal"
         >
           Groscan is your personal AI grocery and nutrition assistant that
           simplifies grocery management by allowing you to scan your shopping
           list, track expenses, make informed nutritional choices, and minimize
           waste. Join thousands of users already benefiting from Groscan.
-        </motion.p>
+        </p>
 
         {/* Buttons */}
-        <motion.div
+        <div
           className="flex flex-row gap-2 w-full"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.6,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-          }}
+          
         >
           <Link
             href="./"
-            className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
+            className="p-4 font-circular md:w-[181px] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
             <Image
               src={apple}
               alt="apple_image"
@@ -71,7 +48,7 @@ export default function Grocery() {
           </Link>
           <Link
             href="./"
-            className="p-4 font-circular w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
+            className="p-4 font-circular md:w-[181px] w-full rounded-[16px] text-white flex gap-2 items-center justify-center font-semibold md:text-[16px] text-[12px] bg-dark-brown">
             <Image
               src={andriod}
               alt="andriod_image"
@@ -79,26 +56,19 @@ export default function Grocery() {
             />
             Get on Android
           </Link>
-        </motion.div>
+        </div>
       </div>
 
       {/* Image */}
-      <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{
-          delay: 0.2,
-          x: { type: "spring", stiffness: 60 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-        }}
+      <div
+        
       >
         <Image
           src={Frame}
           alt="Grocery Management"
           className="md:w-[462px] w-[350px] object-contain"
         />
-      </motion.div>
+      </div>
     </div>
   );
 }

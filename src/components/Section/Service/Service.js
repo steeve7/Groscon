@@ -1,11 +1,9 @@
-'use client'
 import React from "react";
 import icon from "../Assets/images/service1.png";
 import icon2 from "../Assets/images/servicee2.png";
 import icon3 from "../Assets/images/service3.png";
 import Subtitle from "@/components/Reuse/Subtitle";
 import Image from "next/image";
-import {motion} from 'framer-motion'
 
 export default function Service() {
   const items = [
@@ -26,7 +24,7 @@ export default function Service() {
     },
   ];
   return (
-    <motion.div
+    <div
       className="w-full py-[96px] bg-custom-gray"
       id="benefits"
      
@@ -40,18 +38,10 @@ export default function Service() {
         
       >
         {items.map((item, i) => (
-          <motion.div
+          <div
             key={i}
             className="flex flex-col items-center gap-6 w-full sm:w-1/2 md:w-1/3 lg:w-[357px] py-6 rounded-lg bg-custom-green"
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-              y: { type: "spring", stiffness: 60 },
-              opacity: { duration: 0.2 },
-              ease: "easeIn",
-              duration: 1,
-            }}
+            
           >
             <Image
               src={item.icons}
@@ -60,7 +50,7 @@ export default function Service() {
               width={72} // Adjust width according to your requirements
               height={72} // Adjust height according to your requirements
             />
-            <div className="w-full flex flex-col gap-4 px-5 md:px-0">
+            <div className="w-full flex flex-col gap-4 px-5 md:px-7">
               <h3 className="font-semibold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-circular text-dark-color text-center">
                 {item.title}
               </h3>
@@ -68,9 +58,9 @@ export default function Service() {
                 {item.desc}
               </p>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }
