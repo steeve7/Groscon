@@ -22,7 +22,7 @@ export default function Join() {
         </div>
       </div>
       3{/* Main content container */}
-      <div className="relative flex flex-col lg:flex-row md:flex-col md:mt-0 -mt-7 items-center justify-center pt-10 md:w-3/4 w-full gap-6">
+      <div className="relative flex flex-col lg:flex-row md:flex-col items-center justify-center pt-10 md:w-3/4 w-full gap-6">
         <div className="flex-1 lg:w-1/2 w-full lg:px-3 px-8">
           <h2
            
