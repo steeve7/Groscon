@@ -61,9 +61,17 @@ export default function Header() {
         {/*  Mobile Button*/}
         <div className="block sm:hidden z-10" onClick={handleOpen}>
           {menuSlide ? (
-            <Image src={menuclose} alt="menu-open" className="w-[32px] text-dark-color" />
+            <Image
+              src={menuclose}
+              alt="menu-open"
+              className="w-[32px] text-dark-color"
+            />
           ) : (
-            <Image src={menuopen} alt="menu-close" className="w-[32px] text-dark-color" />
+            <Image
+              src={menuopen}
+              alt="menu-close"
+              className="w-[32px] text-dark-color"
+            />
           )}
         </div>
         {/*Mobile Menu*/}
@@ -80,7 +88,9 @@ export default function Header() {
                 key={i}
                 className="p-4 hover:text-gray-500 border-b-2 py-4 font-medium text-[18px] text-dark-color font-circular"
               >
-                <a href={menu.id}>{menu.label}</a>
+                <a href={menu.id} onClick={handleOpen}>
+                  {menu.label}
+                </a>
               </li>
             ))}
           </ul>

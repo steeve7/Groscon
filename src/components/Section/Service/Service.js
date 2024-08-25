@@ -34,7 +34,7 @@ export default function Service() {
         desc="We simplify the process of managing groceries and help you make informed nutritional choices."
       />
       <div
-        className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:px-0 px-5 mt-14"
+        className="w-full flex flex-col md:flex-row justify-center items-center gap-6 lg:px-10 md:px-20 px-5 mt-14"
         
       >
         {items.map((item, i) => (
