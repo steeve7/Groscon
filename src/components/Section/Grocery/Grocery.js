@@ -26,7 +26,7 @@ useEffect(() => {
   return (
     <div className="flex flex-col md:flex-row justify-around items-center w-full lg:py-36 md:py-20 py-[3rem] space-y-14 md:space-y-0 md:px-14 px-7 bg-[#e6f7e6]">
       {/* Text Content */}
-      <div className="lg:w-[640px] md:w-[450px] w-full space-y-10 lg:mt-0 mt-16">
+      <div className="lg:w-[640px] md:w-[450px] w-full md:space-y-10 space-y-5 lg:mt-0 mt-16">
         {/* Title */}
         <h2 className="font-semibold lg:text-[3.75rem] md:text-3xl text-[36px] flex flex-col font-circular text-dark-color lg:gap-10 md:gap-2 lg:mb-10">
           Grocery
