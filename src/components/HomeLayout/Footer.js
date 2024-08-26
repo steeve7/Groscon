@@ -7,6 +7,13 @@ import apple from "./Assets/Images/apple.png";
 import andriod from "./Assets/Images/android.png";
 
 export default function Footer() {
+  const menus = [
+    { id: "#benefits", label: "Benefits" },
+    { id: "#feature", label: "Features" },
+    { id: "#faqs", label: "FAQs" },
+    
+  ];
+
   return (
     <div className="w-full md:px-20 px-7 mt-10 bg-white py-8">
       <section className="flex md:flex-row flex-col justify-between w-full">
@@ -20,15 +27,13 @@ export default function Footer() {
           <div className="mt-8">
             <ul className="flex flex-row md:gap-6 gap-32 font-medium text-dark-color md:text-[10px] lg:text-[16px] text-[15px]">
               <div className="flex md:flex-row flex-col gap-4 md:text-[16px] font-circular">
-                <Link href="./" id="benefits">
-                  <li>Benefits</li>
-                </Link>
-                <Link href="./" id="feature">
-                  <li>Feature</li>
-                </Link>
-                <Link href="./" id="faqs">
-                  <li>FAQs</li>
-                </Link>
+               {menus.map((menu, i) => (
+                <li key={i}>
+                  <Link href={menu.id}>
+                  {menu.label}
+                  </Link>
+                </li>
+               ))}
               </div>
               <div className="flex md:flex-row flex-col items-center gap-4 font-circular">
                 <Link href="./">
@@ -83,10 +88,10 @@ export default function Footer() {
             <Link href="./">
               <FaFacebook />
             </Link>
-            <Link href="./">
+            <Link href="https://www.linkedin.com/company/groscan/about/">
               <FaLinkedin />
             </Link>
-            <Link href="./">
+            <Link href="https://x.com/groscanAI">
               <FaTwitter />
             </Link>
           </div>

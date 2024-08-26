@@ -15,11 +15,17 @@ const menus = [
 export default function Header() {
   const [menuSlide, setMenuSlide] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("");
 
 
   const handleOpen = () => {
     setMenuSlide(!menuSlide);
   };
+
+  const handleMenuClick = (id) =>{
+     setActiveMenu(id);
+     handleOpen();
+  }
 
 
   const changeBackground = () => {
@@ -49,8 +55,10 @@ export default function Header() {
             <li key={i}>
               <a
                 href={menu.id}
-                activeclass="active"
-                className="hover:text-light-yellow"
+                onClick={() => setActiveMenu(menu.id)}
+                className={`hover:text-light-yellow ${
+                  activeMenu === menu.id ? "text-light-yellow" : ""
+                }`}
               >
                 {menu.label}
               </a>
@@ -86,9 +94,13 @@ export default function Header() {
             {menus.map((menu, i) => (
               <li
                 key={i}
-                className="p-4 hover:text-gray-500 border-b-2 py-4 font-medium text-[18px] text-dark-color font-circular"
+                className={`p-4 border-b-2 py-4 font-medium text-[18px] text-dark-color font-circular ${
+                  activeMenu === menu.id
+                    ? "text-light-yellow"
+                    : "hover:text-light-yellow"
+                }`}
               >
-                <a href={menu.id} onClick={handleOpen}>
+                <a href={menu.id} onClick={() => handleMenuClick(menu.id)}>
                   {menu.label}
                 </a>
               </li>
