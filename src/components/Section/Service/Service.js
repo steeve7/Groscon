@@ -1,9 +1,11 @@
+'use client'
 import React from "react";
 import icon from "../Assets/images/service1.png";
 import icon2 from "../Assets/images/servicee2.png";
 import icon3 from "../Assets/images/service3.png";
 import Subtitle from "@/components/Reuse/Subtitle";
 import Image from "next/image";
+import {motion} from 'framer-motion'
 
 export default function Service() {
   const items = [
@@ -24,24 +26,44 @@ export default function Service() {
     },
   ];
   return (
-    <div
-      className="w-full py-[96px] bg-custom-gray"
-      id="benefits"
-     
-    >
-      <Subtitle
-        title="We are Your Grocery Companion"
-        desc="We simplify the process of managing groceries and help you make informed nutritional choices."
-      />
-      <div
-        className="w-full flex flex-col md:flex-row justify-center items-center gap-6 lg:px-10 md:px-20 px-5 mt-14"
-        
-      >
+    <div className="w-full py-[96px] bg-custom-gray" id="benefits">
+      <div className="flex flex-col justify-center text-center w-full px-10 md:px-0">
+        <motion.h1
+          className="md:text-[48px] text-[24px] font-semibold w-full font-circular mb-3 text-dark-color"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.6,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+        >
+          We are Your Grocery Companion
+        </motion.h1>
+        <motion.p
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 1, // Increased delay to ensure it appears after h1
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          className="md:text-[18px] text-[16px] font-normal w-full font-circular text-light-green"
+        >
+          We simplify the process of managing groceries and help you make
+          informed nutritional choices.
+        </motion.p>
+      </div>
+
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 lg:px-10 md:px-20 px-5 mt-14">
         {items.map((item, i) => (
           <div
             key={i}
             className="flex flex-col items-center gap-6 w-full sm:w-1/2 md:w-1/3 lg:w-[357px] py-6 rounded-lg bg-custom-green"
-            
           >
             <Image
               src={item.icons}

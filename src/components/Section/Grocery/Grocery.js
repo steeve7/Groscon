@@ -35,7 +35,7 @@ useEffect(() => {
         </h2>
 
         {/* Description */}
-        <p className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-circular text-light-green font-normal lg:w-[600px] w-full">
+        <p className="lg:text-[1rem] leading-7 md:text-sm text-[16px] font-circular text-light-green md:font-light font-normal lg:w-[600px] w-full">
           Groscan is your personal AI grocery and nutrition assistant that
           simplifies grocery management by allowing you to scan your shopping
           list, track expenses, make informed nutritional choices, and minimize
@@ -110,7 +110,7 @@ useEffect(() => {
             />
           </div>
         )}
-      </div>{" "}
+      </div>
     </div>
   );
 }
