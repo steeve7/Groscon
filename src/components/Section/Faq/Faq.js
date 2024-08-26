@@ -2,7 +2,6 @@
 import Subtitle from "@/components/Reuse/Subtitle";
 import React, { useState } from "react";
 import { IoMdRemoveCircleOutline, IoIosAddCircleOutline } from "react-icons/io";
-import { motion } from "framer-motion";
 
 export default function Faq() {
   // Array to keep track of which sections are open
@@ -85,7 +84,7 @@ export default function Faq() {
               {openSections[index] ? (
                 <IoMdRemoveCircleOutline
                   size={20}
-                  className="text-orange-600"
+                  className="text-lighter-green"
                 />
               ) : (
                 <IoIosAddCircleOutline

@@ -120,5 +120,5 @@ body{
 }
 
 .bounce-animation {
-  animation: bounce 1s infinite;
+  animation: bounce 3s infinite;
 }

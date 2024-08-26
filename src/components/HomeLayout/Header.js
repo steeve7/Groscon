@@ -50,7 +50,7 @@ export default function Header() {
         <a href="./" className="flex items-center justify-start gap-2 ">
           <Image src={logo} alt="cartImage" className="w-[148px]" />
         </a>
-        <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-medium text-[16px] text-dark-color font-circular">
+        <ul className="justify-around gap-6 items-center md:flex flex-row hidden font-normal text-[16px] text-dark-color font-circular">
           {menus.map((menu, i) => (
             <li key={i}>
               <a
